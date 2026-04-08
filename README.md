@@ -102,7 +102,7 @@ This structure makes the framework easier to maintain, scale, and explain in int
 
 ### 1. Clone the repository
 
-    git clone https://github.com/Rauf777222/playwright-python-ecommerce-framework.git
+    git clone https://github.com/raufnajiyev/playwright-python-ecommerce-framework.git
 
 ### 2. Open the project folder
 
