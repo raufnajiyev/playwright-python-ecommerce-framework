@@ -2,13 +2,11 @@
 
 ## Project Overview
 
-This project is a beginner-friendly end-to-end automation testing framework built with **Python**, **Playwright**, and **Pytest**.
+This project is an end-to-end UI automation framework built with **Python**, **Playwright**, and **Pytest**.
 
-The framework automates important user flows on the **SauceDemo** e-commerce website, including login, cart, and checkout scenarios.
+It automates key user flows on the **SauceDemo** e-commerce website and was designed as a portfolio project to demonstrate practical **Automation QA** skills.
 
-It also uses:
-- **Page Object Model (POM)** for clean and maintainable structure
-- **Allure Reports** for visual test reporting
+The framework follows the **Page Object Model (POM)** design pattern, uses **Pytest fixtures** for reusable setup, stores reusable test data in a separate file, and integrates **Allure Reports** for visual test reporting.
 
 ---
 
@@ -25,7 +23,21 @@ https://www.saucedemo.com/
 - Playwright
 - Pytest
 - Page Object Model (POM)
+- Pytest Fixtures
 - Allure Reports
+- Git and GitHub
+
+---
+
+## Key Features
+
+- End-to-end UI automation for a public e-commerce website
+- Positive and negative test scenarios
+- Page Object Model for clean and maintainable structure
+- Shared test data stored separately from test logic
+- Reusable login setup using Pytest fixture
+- Allure integration for visual reporting
+- Clean project structure for portfolio presentation
 
 ---
 
@@ -34,7 +46,7 @@ https://www.saucedemo.com/
     pages/
     tests/
     data/
-    allure-results/
+    screenshots/
     README.md
     requirements.txt
     pytest.ini
@@ -43,15 +55,20 @@ https://www.saucedemo.com/
 
 ## Covered Test Scenarios
 
-- Valid login
-- Invalid login
-- Add product to cart
-- Open cart and verify correct product
-- Remove product from cart
-- Open checkout page
-- Fill checkout information
-- Complete checkout
-- Checkout validation with empty fields
+### Login
+- Verify that a valid user can log in successfully
+- Verify that an invalid user sees an error message
+
+### Cart
+- Verify that a logged-in user can add a product to the cart
+- Verify that the correct product appears in the cart
+- Verify that removing a product makes the cart empty
+
+### Checkout
+- Verify that the user can open the checkout page
+- Verify that the user can fill checkout information
+- Verify that the user can complete the checkout process
+- Verify that an error appears when checkout fields are empty
 
 ---
 
@@ -59,12 +76,25 @@ https://www.saucedemo.com/
 
 This framework follows the **Page Object Model (POM)** design pattern.
 
-- **pages/** stores page locators and page actions
-- **tests/** stores test scenarios
-- **data/** stores reusable test data
-- **conftest.py** stores reusable pytest fixtures
+### pages/
+Stores page locators and page actions.
 
-This structure makes the framework easier to read, maintain, and scale.
+### tests/
+Stores test scenarios grouped by feature:
+- login
+- cart
+- checkout
+
+### data/
+Stores reusable test data such as:
+- usernames
+- password
+- checkout information
+
+### conftest.py
+Stores reusable pytest fixtures, such as the shared login setup used by multiple tests.
+
+This structure makes the framework easier to maintain, scale, and explain in interviews.
 
 ---
 
@@ -72,7 +102,7 @@ This structure makes the framework easier to read, maintain, and scale.
 
 ### 1. Clone the repository
 
-    git clone <your-repository-link>
+    git clone https://github.com/Rauf777222/playwright-python-ecommerce-framework.git
 
 ### 2. Open the project folder
 
@@ -84,16 +114,16 @@ This structure makes the framework easier to read, maintain, and scale.
 
 ### 4. Activate the virtual environment
 
-**For Git Bash:**
-
+**Git Bash**
+    
     source venv/Scripts/activate
 
-**For Command Prompt:**
-
+**Command Prompt**
+    
     venv\Scripts\activate
 
-**For PowerShell:**
-
+**PowerShell**
+    
     .\venv\Scripts\Activate.ps1
 
 ### 5. Install dependencies
@@ -108,7 +138,7 @@ This structure makes the framework easier to read, maintain, and scale.
 
 ## How to Run Tests
 
-Run all tests with:
+Run all tests:
 
     pytest
 
@@ -124,43 +154,37 @@ Run tests and save Allure result files:
 
 ## How to Open Allure Report
 
-Open the visual Allure report in the browser:
+Open the Allure report in browser:
 
     allure serve allure-results
 
 ---
 
-## Example Scenarios Covered
+## Screenshots
 
-### Login Tests
-- Verify that a valid user can log in successfully
-- Verify that an invalid user sees an error message
+### Pytest Test Run
 
-### Cart Tests
-- Verify that a logged-in user can add a product to the cart
-- Verify that the correct product appears in the cart
-- Verify that removing a product makes the cart empty
+![Pytest Test Run](screenshots/test-run.png)
 
-### Checkout Tests
-- Verify that the user can open the checkout page
-- Verify that the user can fill checkout information
-- Verify that the user can complete the checkout process
-- Verify that an error appears when checkout fields are empty
+### Allure Report Overview
+
+![Allure Report Overview](screenshots/allure-overview.png)
 
 ---
 
 ## Why This Project Is Important
 
 This project demonstrates:
-- UI automation with Playwright
-- Python test automation using Pytest
-- Page Object Model framework design
-- Positive and negative test coverage
-- Reusable test data handling
-- Reusable fixtures with pytest
-- Visual reporting with Allure
 
-It was built as a portfolio project to demonstrate practical automation QA skills.
+- UI automation with Playwright
+- Python automation with Pytest
+- POM-based framework design
+- Positive and negative test coverage
+- Reusable fixtures and test data
+- Reporting with Allure
+- Clean GitHub project presentation
+
+It was built to help demonstrate hands-on automation testing skills for QA Engineer and Automation QA Engineer roles.
 
 ---
 
