@@ -7,7 +7,7 @@ This project is an end-to-end UI automation framework built with **Python**, **P
 It automates key user flows on the **SauceDemo** e-commerce website and was designed as a portfolio project to demonstrate practical **Automation QA** skills.
 
 The framework follows the **Page Object Model (POM)** design pattern, uses **Pytest fixtures** for reusable setup, stores reusable test data in a separate file, and integrates **Allure Reports** for visual test reporting.
-
+Demo update: GitHub Actions workflow trigger test.
 ---
 
 ## Website Under Test
