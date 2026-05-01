@@ -1,5 +1,7 @@
 # Playwright Python E-Commerce Automation Framework
 
+[![UI Tests](https://github.com/raufnajiyev/playwright-python-ecommerce-framework/actions/workflows/ui-tests.yml/badge.svg?branch=main)](https://github.com/raufnajiyev/playwright-python-ecommerce-framework/actions/workflows/ui-tests.yml)
+
 ## Project Overview
 
 This project is an end-to-end UI automation framework built with **Python**, **Playwright**, and **Pytest**.
